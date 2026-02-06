@@ -17,7 +17,7 @@
     "r.rpath.linux": "/n/sw/helmod-rocky8/apps/Core/R/4.5.1-fasrc01/bin/R",
     "python.terminal.activateEnvInCurrentTerminal": true,
     "r.libPaths": [
-        "/n/holylabs/cgolden_lab/Lab/projects/madagascar_weather_stations/MadagascarWeatherStations/renv/library/linux-rocky-8.10/R-4.5/x86_64-pc-linux-gnu",
+        "/n/home03/ttapera/.cache/R/renv/library/MadagascarWeatherStations-3f971751/linux-rocky-8.10/R-4.5/x86_64-pc-linux-gnu",
         "/n/home03/ttapera/.cache/R/renv/sandbox/linux-rocky-8.10/R-4.5/x86_64-pc-linux-gnu/d2ec90c5"
     ]
 }

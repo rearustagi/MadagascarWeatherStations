@@ -2,3 +2,15 @@
 ^renv\.lock$
 ^dev$
 ^LICENSE\.md$
+^README\.Rmd$
+^CODE_OF_CONDUCT\.md$
+^MadagascarWeatherStations\.Rproj$
+^\.Rproj\.user$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.Rproj\.user$
+data
+sandbox
+\.vscode
+_targets

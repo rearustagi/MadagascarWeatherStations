@@ -16,15 +16,16 @@ All commands that you use to use when developing packages...
 fusen::fill_description(
   pkg = here::here(),
   fields = list(
-    Title = "Build A Package From Rmarkdown File",
-    Description = "Use Rmarkdown First method to build your package. Start your package with documentation. Everything can be set from a Rmarkdown file in your project.",
+    Title = "Madagascar Weather Stations",
+    Description = "A data pipeline and distribution package for our Madagascar weather stations data.",
     `Authors@R` = c(
-      person("John", "Doe", email = "john@email.me", role = c("aut", "cre"), comment = c(ORCID = "0000-0000-0000-0000"))
-    )
-  )
+      person("Tinashe", "Tapera", middle = "Michael", email = "ttapera@hsph.harvard.edu", role = c("aut", "cre"))
+    )  
+  ),
+  overwrite = TRUE
 )
 # Define License with use_*_license()
-usethis::use_mit_license("John Doe")
+usethis::use_mit_license("Tinashe Michael Tapera")
 ```
 
 # All-in-one function to deploy publicly on GitHub
@@ -56,7 +57,7 @@ remotes::install_local()
 # README
 usethis::use_readme_rmd()
 # Code of Conduct
-usethis::use_code_of_conduct("contact@fake.com")
+usethis::use_code_of_conduct("ttapera@hsph.harvard.edu")
 # NEWS
 usethis::use_news_md()
 ```
@@ -130,3 +131,25 @@ devtools::build(vignettes = TRUE)
 fusen::init_share_on_github()
 ```
 
+# Extra Packages for VSCode, `renv`, and `targets`
+
+```{r}
+install.packages(c(
+  "languageserver", # R language server
+  "rlang", # language server support
+  "jsonlite", # JSON support
+  "remotes", # VSCode R tools
+  "config", # for fusen config mgmt
+  "parsermd"
+))
+
+remotes::install_github("nx10/httpgd") #
+
+renv::install("fledge")
+fledge::update_news()
+
+renv::install("targets")
+renv::install("ropensci/tarchetypes")
+
+targets::use_targets()
+```
